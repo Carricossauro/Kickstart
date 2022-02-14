@@ -1,0 +1,10 @@
+# way too easy lol
+
+T = int(input())
+
+for i in range(T):
+    bag_number, N = map(int, input().split())
+    bags = sum(list(map(int, input().split())))
+    
+    result = bags % N
+    print("Case #" + str(i+1) + ": " + str(result))
